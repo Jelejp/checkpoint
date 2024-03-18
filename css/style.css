@@ -1,0 +1,147 @@
+:root{
+    --color-1: #f5deb3;
+    --color-2: #ffffff;
+    --color-3: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color-2);
+}
+header{
+    background-color: var(--color-1);
+    text-align: center;
+    
+}
+header p{
+    padding: 10px;
+}
+header nav{
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: space-around;
+
+}
+header a{
+    text-decoration: none;
+    color: var(--color-2);
+}
+img{
+    width: 265px;
+
+}
+
+.contenedor1{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+.card{
+    background-color: var(--color-2);
+    width: 70.5vw;
+    margin-top: 10px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .6);
+
+}
+.card h3{
+    padding-top: 10px;
+}
+.Card h3 , .card p{
+    padding: 10px;
+}
+
+    
+.contenedor2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.lista ul{
+    margin-left: 20px;
+}
+table , .lista ul{
+    margin-top: 10px;
+}
+.tabla{
+    text-align: center;
+}
+
+table, tr , th, td{
+    border: 1px solid var(--color-3);
+    border-collapse: collapse;
+    padding: 5px;
+}
+footer{
+    background-color: var(--color-1);
+}
+.footer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+fieldset{
+    width: 262px;
+}
+legend{
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .card{
+        width: 34.5vw;
+    }
+    .contenedor1{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    
+    }   
+    .footer{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .card{
+        width: 25.9vw;
+    }
+    .contenedor2{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contenedor1{
+        margin-top: 10px;
+    }
+    .card{
+        width: 25vw;
+        height: 330px;  
+    }
+    .card h3{
+        padding: 10px;
+    }
+    img{
+        width: 359.5px;
+    }
+    .contenedor2{
+        margin-top: 20px;
+    }
+    .footer{
+         margin-top: 15px;
+    }
+}
